@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 });
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/appointment-system')
+mongoose.connect("mongodb+srv://aradhik:medical@medicaldb.bzr3y8r.mongodb.net/?retryWrites=true&w=majority&appName=medicalDB" || 'mongodb://localhost:27017/appointment-system')
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Could not connect to MongoDB', err));
 
